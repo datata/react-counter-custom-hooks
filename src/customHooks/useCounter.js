@@ -3,20 +3,16 @@ import { useState } from "react"
 export const useCounter = (initialState = 0) => {
     const[counterState, setCounterState] = useState(initialState);
     
-    const increase = () => {
-        setCounterState(counterState + 1);
+    const increase = (numberToIncrement = 1) => {
+        setCounterState(counterState + numberToIncrement);
     }
 
-    const decrease = () => {
-        setCounterState(counterState - 1);
+    const decrease = (numberToIncrement = 1) => {
+        setCounterState(counterState - numberToIncrement);
     }
 
     const reset = () => {
         setCounterState(0);
-    }
-
-    const increaseByNumber = (numberToIncrement) => {
-        setCounterState(counterState + numberToIncrement)
     }
 
     return {

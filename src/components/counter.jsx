@@ -11,9 +11,8 @@ export const counter = () => {
                 {counterState}
             </h1>
             <button onClick={() => increase()}>+</button>
-            <button onClick={decrease}>-</button>
+            <button onClick={() => decrease()}>-</button>
             <button onClick={reset}>reset</button>
-            <button onClick={() => increaseByNumber(5)}>reset</button>
         </div>
     )
 }
