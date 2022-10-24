@@ -3,7 +3,7 @@ import './counter.css';
 import  useCounter  from "../customHooks/useCounter.js";
 
 export const counter = () => {
-    const { counterState, increase, decrease, reset, increaseByNumber } = useCounter(10);
+    const { counterState, increase, decrease, reset } = useCounter(10);
 
     return (
         <div>

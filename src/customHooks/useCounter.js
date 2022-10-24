@@ -20,7 +20,6 @@ export const useCounter = (initialState = 0) => {
         increase,
         decrease,
         reset,
-        increaseByNumber
     }
 }
 
